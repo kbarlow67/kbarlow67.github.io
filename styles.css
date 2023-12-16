@@ -1,0 +1,33 @@
+/* Resetting some default styles for better cross-browser consistency */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Your CSS styles for the website go here */
+/* Example styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+h1 {
+    color: orange;
+}
