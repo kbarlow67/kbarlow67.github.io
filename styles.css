@@ -68,6 +68,39 @@ header nav a:hover {
   margin: 1rem 0 0.5rem;
 }
 
+/* Certifications Section */
+.certifications {
+  margin: 2rem 0;
+}
+
+.certifications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.certification-item {
+  background: #ecf0f1;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.certification-item h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.certification-item p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+
 /* About Section */
 .about,{
   margin: 2rem 0;
