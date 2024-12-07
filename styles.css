@@ -133,6 +133,7 @@ footer {
   padding: 1rem 0;
 }
 
+
 /* Social Media Bar */
 .social-media {
   display: flex;
@@ -146,8 +147,8 @@ footer {
 }
 
 .social-media img {
-  width: 30px;
-  height: 30px;
+  width: 3px;
+  height: 3px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
