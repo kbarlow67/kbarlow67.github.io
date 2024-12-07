@@ -42,6 +42,11 @@
                 <h3>Project 3</h3>
                 <p>A brief description of the project.</p>
             </div>
+            <div class="portfolio-item">
+              <img src="https://via.placeholder.com/300" alt="Project 4">
+              <h3>Project 4</h3>
+              <p>A brief description of the project.</p>
+          </div>
         </div>
     </section>
 
@@ -52,7 +57,7 @@
 
     <section id="contact" class="container contact">
       <h2>Contact</h2>
-      <form>
+      <form action="https://formspree.io/f/xvgongwz" method="POST">
           <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -67,12 +72,49 @@
           </div>
           <button type="submit" class="btn">Send Message</button>
       </form>
+      <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault(); // Prevent default form submission
+            const formData = new FormData(form);
+    
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        Accept: "application/json",
+                    },
+                });
+    
+                if (response.ok) {
+                    alert("Your message has been sent successfully!");
+                    form.reset();
+                } else {
+                    alert("Oops! There was a problem submitting your form.");
+                }
+            } catch (error) {
+                alert("An error occurred. Please try again.");
+            }
+        });
+    </script>
+    
   </section>
   
+  
 
-    <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    </footer>
+  <footer>
+    <div class="social-media">
+        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+        </a>
+    </div>
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+
 
 </body>
 </html>

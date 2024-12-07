@@ -132,3 +132,26 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
+/* Social Media Bar */
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.social-media a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
